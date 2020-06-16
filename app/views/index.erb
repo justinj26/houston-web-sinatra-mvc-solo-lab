@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    <p>List of pupppies: </p>
+    <ul>
+        <% @puppies.each do |puppy| %>
+        <a href="/puppies/<%= puppy.id %>">
+            <li><%= puppy.name %></li>
+        </a>
+        <% end %>
+    </ul>
+</body>
+</html>

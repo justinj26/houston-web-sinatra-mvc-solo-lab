@@ -1,0 +1,14 @@
+<form action="/puppies/<%= @puppy.id %>" method="post">
+<input type="hidden" name="_method" value="patch" />
+
+<label> Name:</label>
+<input type="text" name="name" value="<%= @puppy.name %>"/>
+
+<br/>
+
+<label> Breed:</label>
+<input type="text" name="year" value="<%= @puppy.breed %>"/>
+
+<input type="submit" value="Update puppy">
+
+</form>
